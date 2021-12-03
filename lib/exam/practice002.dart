@@ -10,6 +10,7 @@ class Transaction {
   int year;
   int value;
 
+
   Transaction(this.trader, this.year, this.value);
 }
 
