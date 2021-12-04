@@ -1,19 +1,21 @@
-
-void main(){
-  List<int> items = [1,2,3,4,5];
-
-  items.forEach(print);
-
-  items.forEach(myPrint);
+void greeting(String text) {
+ print(text);
 }
 
-void myPrint(int num) {
-  print('이건 내 프린트야 $num');
+// void main() {
+//   var f = greeting;
+//   f('hello');
+// }
+
+void something(Function(int i)f) {
+ f(10);
 }
 
-
-
-
+void main() {
+ something((value) {
+  print(value);
+ });
+}
 
 
 
