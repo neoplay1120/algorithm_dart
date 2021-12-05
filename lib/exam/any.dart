@@ -8,9 +8,10 @@ void main() {
       break;
     }
   }
+  
 
-  items.any((e) => e % 2 == 0);
+  dynamic result2 = items.any((e) => e % 2 == 0);
 
-
+  print(result2);
 
 }  
