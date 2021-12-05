@@ -4,11 +4,25 @@ import 'dart:math';
 import 'package:dart_exams/exam/functionProgramming_001.dart';
 
 void main() {
-  final items = [1, 2, 3, 4, 5];
 
-  // for (var i = 0; i < items.length; i++) {
-  //   print(items[i]);
-  // }
+  Tank tank1 = Tank('슈퍼맨','울트라');
 
-  items.forEach(print);
+  print(tank1);
+
+}
+
+
+class Tank {
+  String name;
+  String city;
+
+  Tank(this.name, this.city);
+
+}
+
+class Human{
+  int age;
+  int tall;
+  String name;
+
 }

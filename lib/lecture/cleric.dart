@@ -5,12 +5,11 @@ import 'package:dart_exams/lecture/cls1123_2.dart';
 void main() {
   // 타입 변수명 = 값
   // int i = 10;
-  // Cleric타입 cleric이름으로 = 클래릭을 만들자
+  // Cleric타입 cleric이름으로 = 클레릭을 만들자
   Cleric cleric = Cleric('이름', hp: 100, mp: 50);    // secondary constructor
+//                Cleric(this.name, {this.hp = maxHp, this.mp = maxMp});
   final cleric2 = Cleric('이름');
   final cleric3 = Cleric('우서');   // 기본 생정자 primary constructor
-  
-
   // 상수 const, final
   // final 런타임 상수 : 실행 중에 결정되는 메모리
   // const 컴파일 상수 : 컴파일 중에 결정되는 메모리
@@ -26,17 +25,11 @@ void main() {
 
   print(Cleric.maxMp);
 }
-
 //// Top level ------------>
-
-
-
 //// Top level <------------
-
 class Cleric extends Character {
   //// Field, 전역, Global, Property ------------>
   // 전역 변수, Field, member 변수, Global 변수,
-
   // public
   String name;
   int hp;

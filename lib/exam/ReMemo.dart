@@ -1,41 +1,13 @@
-void greeting(String text) {
- print(text);
-}
-
-// void main() {
-//   var f = greeting;
-//   f('hello');
-// }
-
-void something(Function(int i)f) {
- f(10);
-}
+import 'package:dart_exams/lecture/cls1125_5.dart';
 
 void main() {
- something((value) {
-  print(value);
- });
+  List<NickName> nickNames = [
+    NickName(1, 'https://google.com'),
+    NickName(2, 'https://naver.com'),
+    NickName(3, 'https://facebook.com'),
+    NickName(4, 'https://aribnb.com'),
+    NickName(5, 'https://twitter.com'),
+  ];
+
+  nickNames.where((e) => e.id.isEven).map((e) => e.url).forEach(print);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

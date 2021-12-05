@@ -25,7 +25,9 @@ void main() {
   // 1. 2011년에 일어난 모든 트랜잭션을 찾아 값을 값을 오름차순으로 정리하여 이름을 나열하시오
 
   // 2. 거래자가 근무하는 모든 도시를 중복 없이 나열하시오
-  transactions.map((e) => e.trader.city).toSet().forEach(print);
+  // transactions.map((Transaction e) => e.trader.city).forEach(print);
+  transactions.map((e) => e.trader.city).forEach(print);
+
 
   // 3. 케임브리지에서 근무하는 모든 거래자를 찾아서 이름순으로 정렬하여 나열하시오
   // 4. 모든 거래자의 이름을 알파벳순으로 정렬하여 나열하시오

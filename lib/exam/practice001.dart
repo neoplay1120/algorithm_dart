@@ -6,7 +6,6 @@ void main() {
     multiLine: false,
   );
 
-
   print(ip4.hasMatch('192.168.0.1'));
   print(ip4.hasMatch('192.168.0.2'));
   print(ip4.hasMatch('192.168.0.3'));
